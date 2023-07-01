@@ -12,10 +12,22 @@ h2 {
   color: springgreen;
   letter-spacing: 1rem;
 }
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.75rem;
+  }
+}
 
 .main-wrapper {
   padding-left: 6rem;
   padding-right: 6rem;
+}
+@media (max-width: 1060px) {
+  .main-wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 .header {
@@ -25,11 +37,24 @@ h2 {
   padding-top: 2rem;
   margin-bottom: 2rem;
 }
+@media (max-width: 600px) {
+  .header {
+    display: block;
+    text-align: center;
+  }
+}
 
 .header__logo {
   width: 6rem;
   margin-right: 2rem;
   filter: drop-shadow(0 0 1rem springgreen);
+}
+@media (max-width: 600px) {
+  .header__logo {
+    width: 4rem;
+    margin-right: 0;
+    filter: drop-shadow(0 0 1rem springgreen);
+  }
 }
 
 .header__title {
@@ -37,21 +62,54 @@ h2 {
   font-weight: bold;
   color: springgreen;
 }
+@media (max-width: 600px) {
+  .header__title {
+    font-size: 1.5rem;
+  }
+}
 
 .intro-section {
   margin-bottom: 4rem;
 }
+@media (max-width: 1060px) {
+  .intro-section {
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .intro-section {
+    margin-bottom: 2rem;
+  }
+}
+
 
 .intro-section__photo {
   float: left;
   width: 16rem;
   margin-right: 4rem;
 }
+@media (max-width: 1060px) {
+  .intro-section__photo {
+    float: none;
+    margin: 0 auto;
+    margin-right: 0;
+  }
+}
 
 .intro-section__description {
   font-size: 2rem;
   text-align: center;
   line-height: 1.5;
+}
+@media (max-width: 800px) {
+  .intro-section__description {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .intro-section__description {
+    font-size: 1rem;
+  }
 }
 
 .projects-section {
